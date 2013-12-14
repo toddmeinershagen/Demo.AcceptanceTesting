@@ -1,6 +1,6 @@
 using Coypu;
 
-namespace Demo.AcceptanceTesting.AcceptanceTests
+namespace Demo.AcceptanceTesting.AcceptanceTests.Pages
 {
     public class HomePage : Page
     {

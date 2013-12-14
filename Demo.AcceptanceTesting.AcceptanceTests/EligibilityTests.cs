@@ -1,6 +1,7 @@
 ﻿using System;
 using Coypu;
 using Coypu.Drivers;
+using Demo.AcceptanceTesting.AcceptanceTests.Pages;
 using NUnit.Framework;
 
 namespace Demo.AcceptanceTesting.AcceptanceTests

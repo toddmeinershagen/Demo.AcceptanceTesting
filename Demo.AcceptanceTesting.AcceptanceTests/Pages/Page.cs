@@ -1,7 +1,7 @@
 using System;
 using Coypu;
 
-namespace Demo.AcceptanceTesting.AcceptanceTests
+namespace Demo.AcceptanceTesting.AcceptanceTests.Pages
 {
     public abstract class Page : IDisposable
     {

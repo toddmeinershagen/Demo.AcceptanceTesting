@@ -1,4 +1,6 @@
 using Coypu;
+using Coypu.Matchers;
+using NUnit.Framework;
 
 namespace Demo.AcceptanceTesting.AcceptanceTests.Pages
 {
@@ -10,7 +12,7 @@ namespace Demo.AcceptanceTesting.AcceptanceTests.Pages
 
         public void ShouldHaveCoverageType(string coverageType)
         {
-            Browser.HasContent(coverageType);
+            Assert.That(Browser, Shows.Content(coverageType));
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Demo.AcceptanceTesting.AcceptanceTests
             {
                 var application = new Application(browser);
                 application
-                    .Login(@"medassets\tmeinershagen", "{enter password}")
+                    .Login(@"medassets\tmeinershagen", "P@ssw0rd")
                     .InitiateBenefitsRequest()
                     .SubmitRequest("Todd", "Meinershagen", "U4742976001", new DateTime(1972, 11, 23), "CIGNA", "patient-type-subscriber")
                     .ShouldHaveCoverageType("Choice Fund HSA Open Access Plus");

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<title>Login Page</title>
+	<script>
+	function isValid() {
+		var username = document.getElementById('username').value;
+
+		if (username == 'todd@meinershagen.net') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	</script>
+</head>
+	<body>
+		<form id="loginForm" action="HomePage.html" onsubmit="return isValid();">
+			<span labelFor=" username">Username:</span>
+			<input id="username" type="text" />
+			<span labelfor="password">Password:</span>
+			<input id="password" type="password" />
+			<input id="login" type="submit" value="Login" />
+		</form>
+	</body>
+</html>

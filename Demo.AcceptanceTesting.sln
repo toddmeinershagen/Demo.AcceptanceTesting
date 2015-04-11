@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AcceptanceTesting.AcceptanceTests", "Demo.AcceptanceTesting.AcceptanceTests\Demo.AcceptanceTesting.AcceptanceTests.csproj", "{2304768B-CF57-432A-930C-EBE0E6EA7F47}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AcceptanceTesting", "Demo.AcceptanceTesting\Demo.AcceptanceTesting.csproj", "{E6D9BB18-01D3-47FB-9802-B663A8999B25}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CDE11B3C-2795-4EAC-ACE4-85ABAB6D7862}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{58ACB2C2-7179-4320-A1AE-63538491F404}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
@@ -16,10 +18,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2304768B-CF57-432A-930C-EBE0E6EA7F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2304768B-CF57-432A-930C-EBE0E6EA7F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2304768B-CF57-432A-930C-EBE0E6EA7F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2304768B-CF57-432A-930C-EBE0E6EA7F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D9BB18-01D3-47FB-9802-B663A8999B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D9BB18-01D3-47FB-9802-B663A8999B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D9BB18-01D3-47FB-9802-B663A8999B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D9BB18-01D3-47FB-9802-B663A8999B25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

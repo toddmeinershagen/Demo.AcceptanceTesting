@@ -85,15 +85,18 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Invalid Credentials")]
-        public virtual void InvalidCredentials()
+        [NUnit.Framework.TestCaseAttribute("tammy@meinershagen.net", "unpassword", null)]
+        [NUnit.Framework.TestCaseAttribute("ellie@meinershagen.net", "unpassword", null)]
+        [NUnit.Framework.TestCaseAttribute("chloe@meinershagen.net", "unpassword", null)]
+        public virtual void InvalidCredentials(string username, string password, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Credentials", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Credentials", exampleTags);
 #line 13
 this.ScenarioSetup(scenarioInfo);
 #line 14
- testRunner.Given("invalid username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("invalid username of \'{0}\'", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
- testRunner.And("invalid password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("invalid password of \'{0}\'", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 16
  testRunner.When("I login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 17

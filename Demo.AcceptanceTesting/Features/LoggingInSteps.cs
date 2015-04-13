@@ -22,16 +22,16 @@ namespace Demo.AcceptanceTesting.Features
 			ScenarioContext.Current.Set("password", "password");
 		}
 
-		[Given(@"invalid username")]
-		public void GivenInvalidUsername()
+		[Given(@"invalid username of '(.*)'")]
+		public void GivenInvalidUsername(string username)
 		{
-			ScenarioContext.Current.Set("ellie@meinershagen.net", "username");
+			ScenarioContext.Current.Set(username, "username");
 		}
 
-		[Given(@"invalid password")]
-		public void GivenInvalidPassword()
+		[Given(@"invalid password of '(.*)'")]
+		public void GivenInvalidPassword(string password)
 		{
-			ScenarioContext.Current.Set("unpassword", "password");
+			ScenarioContext.Current.Set(password, "password");
 		}
 
 		[When(@"I login")]
